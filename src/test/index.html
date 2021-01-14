@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id='app'>
+        <h1>{{age.a}}</h1>
+        <h2>{{age.f}}</h2>
+    </div>
+    <script src="./vue.js"></script>
+
+    <script>
+
+        let vm = new Vue({
+            el: "#app",
+            data() {
+                //this = vm
+                return {
+
+                    age: {
+                        a: 11
+                    }
+                }
+            }
+        })
+        vm._data.age = { a: 33, f: 6666667 }
+        console.log(vm._data)
+    </script>
+</body>
+
+</html>
