@@ -8,26 +8,20 @@
 </head>
 
 <body>
-
     <div id="app">
         hello {{age}} world
-
     </div>
-
     <script src="dist/vue.js"></script>
-
     <script>
-
         let vm = new Vue({
             data() {
-                //this = vm
                 return {
                     arr: { name: 'zf' },
                     age: 345
                 }
             }
         })
-        console.log(vm._data)
+        console.log(vm.age)
     </script>
 
 

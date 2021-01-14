@@ -9,27 +9,19 @@
 
 <body>
     <div id='app'>
-        <h1>{{age.a}}</h1>
-        <h2>{{age.f}}</h2>
+        <h1>{{age}}</h1>
     </div>
     <script src="./vue.js"></script>
-
     <script>
-
         let vm = new Vue({
             el: "#app",
             data() {
-                //this = vm
                 return {
-
-                    age: {
-                        a: 11
-                    }
+                    age: [1, 2, 3, 4, 56, 6, 78, 9, 2, 3, 4, 56, 6, 78, 9, 2, 3, 4, 56, 6, 78, 9, 2, 3, 4, 56, 6, 78, 9, 2, 3, 4, 56, 6, 78, 9]
                 }
             }
         })
-        vm._data.age = { a: 33, f: 6666667 }
-        console.log(vm._data)
+        console.log(vm)
     </script>
 </body>
 
