@@ -15,13 +15,14 @@
     <script>
         let vm = new Vue({
             el: "#app",
-            data() {
-                return {
-                    age: [1, 2, 3, 4, 56, 6, 78, 9, 2, 3, 4, 56, 6, 78, 9, 2, 3, 4, 56, 6, 78, 9, 2, 3, 4, 56, 6, 78, 9, 2, 3, 4, 56, 6, 78, 9]
-                }
-            }
+            render: (h, params) => {
+                return h('div', { style: { width: '100px', height: '100px', background: '#ccc' } }, '地方')
+            },
+            template:`<h3>${12345}</h3>`
+
+
         })
-        console.log(vm)
+
     </script>
 </body>
 
